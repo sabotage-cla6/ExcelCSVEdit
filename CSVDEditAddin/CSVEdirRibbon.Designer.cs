@@ -47,7 +47,6 @@
       this.spearatorEditBox = this.Factory.CreateRibbonEditBox();
       this.extEditBox = this.Factory.CreateRibbonEditBox();
       this.encodingComboBox = this.Factory.CreateRibbonComboBox();
-      this.editBox1 = this.Factory.CreateRibbonEditBox();
       this.csvEditRab.SuspendLayout();
       this.CSVFileGroup.SuspendLayout();
       this.group1.SuspendLayout();
@@ -98,7 +97,6 @@
       this.group1.Items.Add(this.spearatorEditBox);
       this.group1.Items.Add(this.extEditBox);
       this.group1.Items.Add(this.encodingComboBox);
-      this.group1.Items.Add(this.editBox1);
       this.group1.Label = "ファイル情報";
       this.group1.Name = "group1";
       // 
@@ -123,12 +121,6 @@
       this.encodingComboBox.Label = "エンコード";
       this.encodingComboBox.Name = "encodingComboBox";
       this.encodingComboBox.Text = "UTF-8";
-      // 
-      // editBox1
-      // 
-      this.editBox1.Label = "forneditBox";
-      this.editBox1.Name = "editBox1";
-      this.editBox1.Text = null;
       // 
       // CSVEdirRibbon
       // 
@@ -157,7 +149,6 @@
     internal Microsoft.Office.Tools.Ribbon.RibbonEditBox spearatorEditBox;
     internal Microsoft.Office.Tools.Ribbon.RibbonEditBox extEditBox;
     internal Microsoft.Office.Tools.Ribbon.RibbonComboBox encodingComboBox;
-    internal Microsoft.Office.Tools.Ribbon.RibbonEditBox editBox1;
   }
 
   partial class ThisRibbonCollection
