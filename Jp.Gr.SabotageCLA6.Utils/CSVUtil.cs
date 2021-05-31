@@ -48,11 +48,11 @@ namespace Jp.Gr.SabotageCLA6.Utils
     /// <param name="setValueAction">各要素の読み取り結果を記録するためのアクション</param>
     private static void ReadCSVRecord(StreamReader reader, Action<string> setValueAction)
     {
+      bool isWaitEndQuote = false;
+      StringBuilder element = new StringBuilder();
       while (!reader.EndOfStream)
       {
         string text = reader.ReadLine() + '\n';
-        bool isWaitEndQuote = false;
-        StringBuilder element = new StringBuilder();
         char[] cArray = text.ToCharArray();
         for (int i = 0; i < cArray.Length; i++)
         {
